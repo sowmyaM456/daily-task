@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries Example</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: white;
+        }
+
+        .logo img {
+            width: 200px;
+        }
+
+        .navlinks {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .navlinks a {
+            flex-wrap: wrap;
+            color: blue;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .container {
+            flex: 1 30%;
+            border: 1px solid white;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: white;
+            max-width: 300px;
+
+        }
+
+        .price,
+        .buy {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .buy button {
+            padding: 8px 12px;
+            border: none;
+            background-color: blue;
+
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .buy button:hover {
+            background-color: blue;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                flex: 1 1 10%;
+            }
+
+            .navlinks {
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg" alt="logo" />
+        </div>
+        <nav class="navlinks">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="container" id="box1">
+            <div class="price">
+                <p>Price: $100</p>
+                <p>Coffee</p>
+            </div>
+            <div class="image">
+                <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg" alt="coffee image" />
+            </div>
+            <div class="buy">
+                <p>Buy Now</p>
+                <p>Add to Cart</p>
+            </div>
+        </div>
+
+        <div class="container" id="box2">
+            <div class="price">
+                <p>Price: $100</p>
+                <p>Coffee</p>
+            </div>
+            <div class="image">
+                <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg" alt="coffee image" />
+            </div>
+            <div class="buy">
+                <p>Buy Now</p>
+                <p>Add to Cart</p>
+            </div>
+        </div>
+
+        <div class="container" id="box3">
+            <div class="price">
+                <p>Price: $100</p>
+                <p>Coffee</p>
+            </div>
+            <div class="image">
+                <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg" alt="coffee image" />
+            </div>
+            <div class="buy">
+                <p>Buy Now</p>
+                <p>Add to Cart</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
