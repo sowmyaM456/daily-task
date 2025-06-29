@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(red, rgb(76, 0, 255), yellow);
+            animation-name: ani;
+            animation-duration: 2s;
+            position: relative;
+            animation-iteration-count: 3;
+
+            /* animation-timing-function: 2; */
+
+            /* line-height: 100px; */
+
+        }
+
+        @keyframes ani {
+            from {
+                transform: rotate(180deg);
+                left: 500px;
+
+            }
+
+            to {
+                transform: rotate(90deg);
+                left: 500px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <section> hello</section>
+
+</body>
+
+</html>
